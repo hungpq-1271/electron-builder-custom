@@ -168,7 +168,7 @@ Function uninstallOldVersion
     StrCpy $0 "$0 --updated"
   ${endif}
 
-  StrCpy $uninstallerFileNameTemp "$PLUGINSDIR\old-uninstaller.exe"
+  StrCpy $uninstallerFileNameTemp "$PLUGINSDIR\abc-old-uninstaller.exe"
   !insertmacro copyFile "$uninstallerFileName" "$uninstallerFileNameTemp"
 
   ExecWait '"$uninstallerFileNameTemp" /S /KEEP_APP_DATA $0 _?=$installationDir' $R0
